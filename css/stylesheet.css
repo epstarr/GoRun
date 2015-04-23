@@ -6,6 +6,10 @@ html {
 body {
     height: 100%;
 }
+ul {
+  margin:0px;
+  padding: 0px;
+}
 #menu {
     background-color: #eee;
 }
@@ -62,4 +66,14 @@ body {
 .toggle-button {
   font-size: 30px;
   background-color: inherit;
+}
+.toggle-button:hover {
+  color: white;
+}
+.toggle-button:focus {
+  color: white;
+}
+.timer-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
 }
