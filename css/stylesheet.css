@@ -1,0 +1,65 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+#menu {
+    background-color: #eee;
+}
+#menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+#menu ul li {
+    font-size: 24px;
+}
+#panel {
+  background-color: #329d5a;
+  height: 100%;
+  width: 100%;
+  display: table;
+  color: white;
+  -webkit-box-shadow: -1px 0px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 11px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 0px 11px 0px rgba(0,0,0,0.75);
+}
+#panel li {
+    list-style: none;
+}
+.nav-pills>li>a {
+    border-radius: 0px;
+}
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+.toggle-button {
+  font-size: 30px;
+  background-color: inherit;
+}
