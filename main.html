@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script/script.js">
+</script>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="#background" class="green">
+<div id="screen-wrap">
+<div id="bg" class="green">
+<div id="settings" class="pull-right"><div id="run-icon" class="set-icon"></div><div id="profile-icon" class="set-icon"></div><div id="alert-icon" class="set-icon"></div></div>
+<div id="screen-main" class="screen">
+
+<img src="logo.png" class="logo center-block"/>
+<div class="row message">
+<h3 class="info text-white">I'm running in <span class="minutes">45</span> minutes</h3><div class="arrow arw-b">&nbsp;</div><div class="arrow arw-u">&nbsp;
+</div>
+<div class="row" style="padding-bottom: 50px;">
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">at</span>
+  <input type="text" class="form-control" placeholder="Capaha Park" aria-describedby="basic-addon1">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<button id="run" type="button" class="btn btn-success btn-lg btn-block">RUN</button>
+</div>
+</div>
+<div class="row message">
+    <h4 id="alert-text" class="text-white">View local runs</h4>
+</div>
+</div>
+<div id="screen-profile" class="hidden screen">
+    <!--<img src="http://placekitten.com/101/101" class="img-circle pull-left" alt="profile" />
+    <h3>Kitten Runner <small>in Cape Girardeau</small></h3>
+    <div id="pace" class="pull-right"><h3 class="green">12+</h3></div>
+    <div id="run-now" class="yellow">
+        <h2>I'm running in 30 minutes @Capaha Park.</h2>
+        </div>
+    <div id="history"><h3>History</h3>
+        <div class="green">
+        <h4>I ran...</h4>
+        <p>...for 48 minutes @Cape Rock. <span class="text-white pull-right">March 12, 2015</span></p>
+        <p>...for 68 minutes @Capaha Park. <span class="text-white pull-right">March 9, 2015</span></p>
+        </div>
+    </div>
+    <div id="profile-info">
+        <div class="col-md-6">
+            <button class="btn btn-block btn-success">VIEW FRIENDS</button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-block btn-success">LOG OUT</button>
+        </div>
+    </div>-->
+    <img src="go-app-profile.png" width="550"/>
+</div>
+<div id="screen-alerts" class="hidden screen">
+    <div class="alert-feed clearfix">
+        <img src="jakob.jpg" class="img-circle pull-left profile-img" alt="profile" width="105" />
+        <h5><span class="profile-one">Jakob Pallesen</span> in Cape Girardeau, MO<span class="pull-right"><span class="label label-success cancel-text">2</span> <span class="text-danger cancel" style="margin-right:10px;cursor:pointer;">Cancel</span></span></h5>
+        <p>I'm running in 45 minutes at Cardiac Hill<br/><span class="text-success">Pace: 10:30 mile </span><span class="text-muted">Planned Distance: 2 miles.</span></p>
+    </div>
+    <div class="alert-feed clearfix">
+        <img src="3-jess-profile.png" class="pull-left profile-img" alt="profile" />
+        <h5><span class="profile-one">Jess</span> in Cape Girardeau, MO<span class="pull-right"><span class="label label-success label1">2</span> <span class="text-success join1" style="margin-right:10px;cursor:pointer;">+Join</span></span></h5>
+        <p>I'm running in 13 minutes at Cardiac Hill<br/><span class="text-success">Pace: 10:30 mile</span> <span class="text-muted">Planned Distance: 2 miles.</span></p>
+    </div>
+    <div class="alert-feed clearfix">
+        <img src="6-matt-feed.png" class="pull-left profile-img" alt="profile" />
+        <h5><span class="profile-one">Jess</span> in Makanda, IL<span class="pull-right"><span class="label label-success label2">2</span> <span class="text-success join2" style="margin-right:10px;cursor:pointer;">+Join</span></span></h5>
+        <p>I'm running in 30 minutes at Giant City Lodge<br/><span class="text-warning">Pace: 9:00 mile <span class="text-muted">Planned Distance: 2 miles.</span></p>
+    </div>
+    <div class="alert-feed clearfix">
+        <img src="5-pat-feed.png" class=" pull-left profile-img" alt="profile" />
+        <h5><span class="profile-one">Cat Runner</span> in Cape Girardeau, MO<span class="pull-right"><span class="label label-success label3">2</span> <span class="text-success join3" style="margin-right:10px;cursor:pointer;">+Join</span></span></h5>
+        <p>I'm running in 45 minutes at Cardiac Hill<br/><span class="text-danger">Pace: 7:00 mile </span><span class="text-muted">Planned Distance: 2 miles.</span></p>
+    </div>
+   
+    
+</div>
+</div>
+</div>
+  </body>
+
+
+</html>

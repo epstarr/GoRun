@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+    <!--Slideout Panel-->
+    <nav id="menu">
+        <div class="container">
+            <div class="row" id="naviMenu">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" id="home" class="active"><a href="#!/page1"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a></li>
+                    <li role="presentation" id="profile"><a href="#!/page2"><span class="glyphicon glyphicon-user">&nbsp;</span>Profile</a></li>
+                    <li role="presentation" id="local"><a href="#!/page3"><span class="glyphicon glyphicon-map-marker">&nbsp;</span>Local Runs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Main Content-->
+    <div class="container-fluid" id="panel">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn toggle-button">
+                    <span class="glyphicon glyphicon-menu-hamburger pull-left"></span>
+                </button>            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" id="naviContent">
+                <ul>
+                    <li id="page1">
+                        <img src="logo.png" class="center-block img-responsive" width="250"/>
+                        <span class="timer-text">I'm running in</span>
+                        <div id="timer"></div>
+                        <span class="timer-text">minutes at</span>
+                        <div id="location"></div>
+                        <button class="btn btn-default">RUN</button>   
+                    </li>
+                    <li id="page2">
+                        <p>New content</p>
+                    </li>
+                    <li id="page3">
+                        
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script/slideout.min.js"></script>
+<script type="text/javascript" src="script/navi-1.9.1.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+</footer>
+</html>
