@@ -12,11 +12,9 @@ $(document).ready(function(){
   useAnimation: true,
   animationSpeed: 0
     });
-  var timer = new Tock({
-  countdown: true,
-  interval: 10,
+
 });
-});
+
 
 /*Slideout.js*/
 
@@ -68,6 +66,11 @@ el.val( function(i, oldval) { return +oldval + +15; });
 })(jQuery);
 
 $('input[type=number]').spinner();
+
+var timer = new Tock({
+  countdown: true,
+  interval: 10,
+});
 
 $('#start').on('click', function() {
     timer.start($('#clock').val());
