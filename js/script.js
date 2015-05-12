@@ -70,7 +70,18 @@ $('input[type=number]').spinner();
 var timer = new Tock({
   countdown: true,
   interval: 10,
+  callback: function () {
+    var current_time = timer.msToTime(timer.lap());
+    $('#clock').val(current_time);
+},
+  complete: function () {
+    alert("Time's up!");
+}
 });
+
+
+
+
 
 $('#start').on('click', function() {
     timer.start($('#clock').val());
