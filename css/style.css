@@ -1,14 +1,12 @@
 html {
-    margin: 0px;
-    padding: 0px;
-}
+  margin: 0px;
+  padding: 0px; }
+
 body {
   width: 100%;
   height: 100%;
-  background-color: #329d5a;
-}
-#panel {
-}
+  background-color: #329d5a; }
+
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -19,23 +17,20 @@ body {
   width: 256px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  display: none;
-}
+  display: none; }
 
 .slideout-panel {
-  position:relative;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .slideout-open .slideout-menu {
-  display: block;
-}
+  display: block; }
+
 .toggle-button {
-  font-size: 30px;
-}
+  font-size: 30px; }
+
+/*# sourceMappingURL=style.css.map */
