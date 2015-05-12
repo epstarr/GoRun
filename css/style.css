@@ -1,11 +1,44 @@
 html {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  height: 100%; }
 
 body {
-  width: 100%;
   height: 100%;
-  background-color: #329d5a; }
+  font-family: "Oswald", sans-serif; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+h3 {
+  font-size: 40px; }
+
+#menu {
+  background-color: #eee; }
+
+#menu ul {
+  list-style: none;
+  padding-left: 0; }
+
+#menu ul li {
+  font-size: 24px; }
+
+#panel {
+  background-color: #329d5a;
+  height: 100%;
+  width: 100%;
+  display: table;
+  color: white;
+  -webkit-box-shadow: -1px 0px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 11px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 11px 0px rgba(0, 0, 0, 0.75); }
+
+#panel li {
+  list-style: none; }
+
+.nav-pills > li > a {
+  border-radius: 0px; }
 
 .slideout-menu {
   position: fixed;
@@ -31,6 +64,67 @@ body {
   display: block; }
 
 .toggle-button {
-  font-size: 30px; }
+  font-size: 30px;
+  background-color: inherit; }
+
+.toggle-button:hover {
+  color: white; }
+
+.toggle-button:focus {
+  color: white; }
+
+.timer-text {
+  font-size: 26px; }
+
+input[type=number] {
+  width: 140px;
+  height: 100px;
+  padding: 0;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  border: 2px #FFF solid;
+  background: none;
+  outline: none;
+  pointer-events: none; }
+
+span.spinner {
+  position: relative;
+  height: 40px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none; }
+  span.spinner .sub, span.spinner .add {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 75px;
+    color: #FFF;
+    border: 2px #FFF solid;
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+    cursor: pointer;
+    transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -webkit-transition: 0.1s linear; }
+  span.spinner .add {
+    top: 0;
+    border: 2px #FFF solid;
+    border-left: 0;
+    border-radius: 0 2px 2px 0; }
+  span.spinner .sub:hover, span.spinner .add:hover {
+    background: #fff;
+    color: #25323B; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
 
 /*# sourceMappingURL=style.css.map */

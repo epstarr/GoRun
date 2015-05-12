@@ -1,15 +1,45 @@
-html
+html 
+  margin: 0px
+  padding: 0px
+  height: 100%
+
+body 
+  height: 100%
+  font-family: 'Oswald', sans-serif
+
+ul 
   margin: 0px
   padding: 0px
 
-body
-  width: 100%
-  height: 100%
+h3
+  font-size: 40px
+#menu 
+  background-color: #eee
+
+#menu ul 
+  list-style: none
+  padding-left: 0
+
+#menu ul li 
+  font-size: 24px
+
+#panel 
   background-color: #329d5a
+  height: 100%
+  width: 100%
+  display: table
+  color: white
+  -webkit-box-shadow: -1px 0px 11px 0px rgba(0,0,0,0.75)
+  -moz-box-shadow: -1px 0px 11px 0px rgba(0,0,0,0.75)
+  box-shadow: -1px 0px 11px 0px rgba(0,0,0,0.75)
 
-#panel
+#panel li 
+  list-style: none
 
-.slideout-menu
+.nav-pills>li>a 
+  border-radius: 0px
+
+.slideout-menu 
   position: fixed
   left: 0
   top: 0
@@ -22,19 +52,31 @@ body
   display: none
 
 
-.slideout-panel
+.slideout-panel 
   position:relative
   z-index: 1
 
 
 .slideout-open,
 .slideout-open body,
-.slideout-open .slideout-panel
+.slideout-open .slideout-panel 
   overflow: hidden
 
 
 .slideout-open .slideout-menu 
   display: block
 
-.toggle-button
+.toggle-button 
   font-size: 30px
+  background-color: inherit
+
+.toggle-button:hover 
+  color: white
+
+.toggle-button:focus 
+  color: white
+
+.timer-text 
+  font-size: 26px
+
+@import spinner
