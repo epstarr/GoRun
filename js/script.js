@@ -45,7 +45,7 @@ el.parent().on('click', '.sub', function () {
 
 if (el.val() > parseInt(el.attr('min')))
 
-el.val( function(i, oldval) { return oldval - 15; });
+el.val( function(i, oldval) { return oldval - 15 });
 
 });
 
@@ -55,7 +55,7 @@ el.parent().on('click', '.add', function () {
 
 if (el.val() < parseInt(el.attr('max')))
 
-el.val( function(i, oldval) { return +oldval + +15; });
+el.val( function(i, oldval) { return +oldval + +15 });
 
 });
 
@@ -69,7 +69,7 @@ $('#clock').spinner();
 
 var timer = new Tock({
   countdown: true,
-  interval: 10,
+  interval: 1000,
   callback: function () {
     var current_time = timer.msToTime(timer.lap());
     $('#clock').val(current_time);
@@ -84,5 +84,5 @@ var timer = new Tock({
 
 
 $('#start').on('click', function() {
-    timer.start($('#clock').val());
+    timer.start($('#clock').val() + ":00");
 });
