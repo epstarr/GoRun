@@ -84,5 +84,11 @@ var timer = new Tock({
 
 
 $('#start').on('click', function() {
+
+    //If clock has stopped, reset
+    if ($("#clock").val() == '00:00.000') {
+      $("#clock").val('15');
+    } else {
     timer.start($('#clock').val() + ":00");
+  }
 });
