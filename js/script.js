@@ -56,22 +56,30 @@ $('#clock').backward_timer({
 })
 
 $(".add").click(function() {
-  $seconds = $seconds + 900;
-  $('#clock').backward_timer({
-    seconds: $seconds,
-    format: 'm%:s%'
-  })
+  if ($(this).hasClass("disabled") == true) {
+  } else {
+    $seconds = $seconds + 900;
+    $('#clock').backward_timer({
+      seconds: $seconds,
+      format: 'm%:s%'
+    })
+  }
 })
 $(".sub").click(function() {
-  $seconds = $seconds - 900;
-  $('#clock').backward_timer({
-    seconds: $seconds,
-    format: 'm%:s%'
-  })
+  if ($(this).hasClass("disabled") == true) {
+  } else {
+    $seconds = $seconds - 900;
+    $('#clock').backward_timer({
+      seconds: $seconds,
+      format: 'm%:s%'
+    })
+  }
 })
 
 $('#start').click(function() {
-  $('#clock').backward_timer('start')
+  $('#clock').backward_timer('start');
+  $(".add").addClass("disabled");
+  $(".sub").addClass("disabled");
 })
 $('#cancel_control').click(function() {
   $('#demo').backward_timer('cancel')
