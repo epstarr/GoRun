@@ -67,6 +67,7 @@ $(".add").click(function() {
 })
 $(".sub").click(function() {
   if ($(this).hasClass("disabled") == true) {
+  } else if ($seconds <= 900) {
   } else {
     $seconds = $seconds - 900;
     $('#clock').backward_timer({
