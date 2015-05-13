@@ -65,7 +65,7 @@ el.val( function(i, oldval) { return +oldval + +15; });
 
 })(jQuery);
 
-$('input[type=number]').spinner();
+$('#clock').spinner();
 
 var timer = new Tock({
   countdown: true,
