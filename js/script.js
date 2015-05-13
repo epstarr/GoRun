@@ -39,25 +39,6 @@ el.before('<span class="sub">-</span>');
 
 el.after('<span class="add">+</span>');
 
-// substract
-
-el.parent().on('click', '.sub', function () {
-
-if (el.val() > parseInt(el.attr('min')))
-
-el.val( function(i, oldval) { return oldval - 15 });
-
-});
-
-// increment
-
-el.parent().on('click', '.add', function () {
-
-if (el.val() < parseInt(el.attr('max')))
-
-el.val( function(i, oldval) { return +oldval + +15 });
-
-});
 
     });
 
@@ -67,28 +48,34 @@ el.val( function(i, oldval) { return +oldval + +15 });
 
 $('#clock').spinner();
 
-var timer = new Tock({
-  countdown: true,
-  interval: 1000,
-  callback: function () {
-    var current_time = timer.msToTime(timer.lap());
-    $('#clock').val(current_time);
-},
-  complete: function () {
-    alert("Time's up!");
-}
-});
+var $seconds = 900;
 
+$('#clock').backward_timer({
+  seconds: $seconds,
+  format: 'm%:s%'
+})
 
+$(".add").click(function() {
+  $seconds = $seconds + 900;
+  $('#clock').backward_timer({
+    seconds: $seconds,
+    format: 'm%:s%'
+  })
+})
+$(".sub").click(function() {
+  $seconds = $seconds - 900;
+  $('#clock').backward_timer({
+    seconds: $seconds,
+    format: 'm%:s%'
+  })
+})
 
-
-
-$('#start').on('click', function() {
-
-    //If clock has stopped, reset
-    if ($("#clock").val() == '00:00.000') {
-      $("#clock").val('15');
-    } else {
-    timer.start($('#clock').val() + ":00");
-  }
-});
+$('#start').click(function() {
+  $('#clock').backward_timer('start')
+})
+$('#cancel_control').click(function() {
+  $('#demo').backward_timer('cancel')
+})
+$('#reset_control').click(function() {
+  $('#demo').backward_timer('reset')
+})
