@@ -104,10 +104,16 @@ $('#start').click(function() {
   $('#clock').backward_timer('start');
   $(".add").addClass("disabled");
   $(".sub").addClass("disabled");
-})
-$('#cancel_control').click(function() {
-  $('#demo').backward_timer('cancel')
-})
-$('#reset_control').click(function() {
-  $('#demo').backward_timer('reset')
+  $(this).addClass("running");
+  //cancel timer if running
+    $('.running').click(function() {
+      //reset
+    $('#clock').backward_timer('reset');
+      //pause
+    $('#clock').backward_timer('cancel');
+    $(this).removeClass("running");
+    $(".add").removeClass("disabled");
+    $(".sub").removeClass("disabled");
+    console.log("reset");
+  })
 })
