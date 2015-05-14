@@ -140,4 +140,20 @@ input[type=text] {
   height: 100px;
   font-size: 40px; }
 
+.profile-pic {
+  position: relative;
+  z-index: 2; }
+
+.profile-bg {
+  background: white;
+  position: relative;
+  bottom: 57px; }
+  .profile-bg p {
+    color: black; }
+  .profile-bg .name {
+    position: relative;
+    bottom: 45px;
+    margin-left: 125px;
+    color: white; }
+
 /*# sourceMappingURL=style.css.map */
