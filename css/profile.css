@@ -1,18 +1,63 @@
 /*
-Sass::SyntaxError: "#page2" failed to @extend ".oswald-normal".
-The selector ".oswald-normal" was not found.
-Use "@extend .oswald-normal !optional" if the extend should be able to fail.
+Error: Undefined variable: "$gogreen".
+        on line 28 of sass/profile.sass
 
+23: 
+24: 	.label-success
+25: 		margin-right: 20px
+26: 
+27: 	h4
+28: 		color: $gogreen
+29: 		margin-top: 35px
+30: 
+31: 	h4:first-child
+32: 		margin-top: 0px
 
 Backtrace:
-sass/profile.sass:2
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:61:in `block in check_extends_fired!'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/util/subset_map.rb:106:in `block in each_value'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/util/subset_map.rb:106:in `each'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/util/subset_map.rb:106:in `each_value'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:50:in `check_extends_fired!'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:39:in `css_tree'
+sass/profile.sass:28
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
@@ -32,4 +77,4 @@ C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/vendor/listen/l
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: \"#page2\" failed to @extend \".oswald-normal\".\A The selector \".oswald-normal\" was not found.\A Use \"@extend .oswald-normal !optional\" if the extend should be able to fail.\A "; }
+  content: "Error: Undefined variable: \"$gogreen\".\A         on line 28 of sass/profile.sass\A \A 23: \A 24: 	.label-success\A 25: 		margin-right: 20px\A 26: \A 27: 	h4\A 28: 		color: $gogreen\A 29: 		margin-top: 35px\A 30: \A 31: 	h4:first-child\A 32: 		margin-top: 0px"; }
