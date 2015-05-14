@@ -1,11 +1,19 @@
+/*Extends */
+.oswald-normal, #page2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; }
+
+.oswald-heavy, body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700; }
+
 html {
   margin: 0px;
   padding: 0px;
   height: 100%; }
 
 body {
-  height: 100%;
-  font-family: "Oswald", sans-serif; }
+  height: 100%; }
 
 ul {
   margin: 0px;
