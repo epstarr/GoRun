@@ -2,16 +2,21 @@
   position: relative;
   z-index: 2; }
 
+.name {
+  display: inline-block;
+  padding-left: 10px;
+  color: white; }
+
+.runs {
+  display: inline-block;
+  padding-top: 25px; }
+
 .profile-bg {
-  background: white;
   position: relative;
-  bottom: 57px; }
+  bottom: 48px;
+  padding-top: 70px;
+  background: white; }
   .profile-bg p {
     color: black; }
-  .profile-bg .name {
-    position: relative;
-    bottom: 45px;
-    margin-left: 125px;
-    color: white; }
 
 /*# sourceMappingURL=profile.css.map */
