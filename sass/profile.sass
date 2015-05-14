@@ -4,16 +4,19 @@
 .profile-pic
 	position: relative
 	z-index: 2
-	
-.name
+
+.heading-text
 	display: inline-block
+	color: white 
+	font-size: 16px
+
+.name
+	@extend .heading-text
 	padding-left: 10px
-	color: white
 	
 .runs
-	display: inline-block
-	padding-top: 25px
-	color: white
+	@extend .heading-text
+	padding-top: 21px
 
 .profile-bg
 	position: relative
@@ -31,7 +34,8 @@
 	h4:first-child
 		margin-top: 0px
 
-	
+	.join
+		margin-top: 10px
 		
 
 
