@@ -55,28 +55,51 @@ $('#clock').backward_timer({
   format: 'm%:s%'
 })
 
+//Add 15 minutes to timer
 $(".add").click(function() {
   if ($(this).hasClass("disabled") == true) {
   } else {
     $seconds = $seconds + 900;
-    $('#clock').backward_timer({
-      seconds: $seconds,
-      format: 'm%:s%'
-    })
+    if ($seconds >= 3600) {
+      $("#clock").backward_timer({
+        seconds: $seconds,
+        format: 'h%:m%'
+      });
+      $(".minutes-hours").text("hours");
+    } else{
+      $('#clock').backward_timer({
+        seconds: $seconds,
+        format: 'm%:s%'
+      });
+      $(".minutes-hours").text("minutes");
+    }
   }
 })
+
+//Subtract 15 minutes from timer
 $(".sub").click(function() {
   if ($(this).hasClass("disabled") == true) {
   } else if ($seconds <= 900) {
   } else {
     $seconds = $seconds - 900;
-    $('#clock').backward_timer({
+    if ($seconds >= 3600) {
+      $('#clock').backward_timer({
+      seconds: $seconds,
+      format: 'h%:m%'
+    });
+      $(".minutes-hours").text("hours");
+    } else {
+      $('#clock').backward_timer({
       seconds: $seconds,
       format: 'm%:s%'
-    })
+    });
+      $(".minutes-hours").text("minutes");
+    }
+    
   }
 })
 
+//begin timer and disable add and sub buttons
 $('#start').click(function() {
   $('#clock').backward_timer('start');
   $(".add").addClass("disabled");
