@@ -99,21 +99,23 @@ $(".sub").click(function() {
   }
 })
 
-//begin timer and disable add and sub buttons
+//Timer Activation/Cancel
 $('#start').click(function() {
-  $('#clock').backward_timer('start');
-  $(".add").addClass("disabled");
-  $(".sub").addClass("disabled");
-  $(this).addClass("running");
-  //cancel timer if running
-    $('.running').click(function() {
-      //reset
+  if ($(this).hasClass("running")) {
+    //reset
     $('#clock').backward_timer('reset');
-      //pause
+    //pause
     $('#clock').backward_timer('cancel');
     $(this).removeClass("running");
-    $(".add").removeClass("disabled");
-    $(".sub").removeClass("disabled");
+    $(this).addClass("start");
+    $(".add, .sub").removeClass("disabled");
     console.log("reset");
-  })
+  } else {
+    //begin
+    $('#clock').backward_timer('start');
+    $(".add, .sub").addClass("disabled");
+    $(this).addClass("running");
+    $(this).removeClass("start");
+  }
+    
 })
