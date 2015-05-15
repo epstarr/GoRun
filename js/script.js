@@ -119,3 +119,17 @@ $('#start').click(function() {
   }
     
 })
+
+$('.edit-button').click(function(){
+  console.log("Edit");
+    var $edit=$('#about'), isEditable=$edit.is('.editable');
+    $edit.prop('contenteditable',!isEditable).toggleClass('editable');
+    $edit.focus();
+    $edit.on("keypress", function(event) {
+      if (event.keyCode === 13) {
+        console.log("Enter");
+        $edit=$('#about'), isEditable=$edit.is('.editable');
+        $edit.prop('contenteditable',!isEditable).toggleClass('editable');
+      }
+    })
+})
