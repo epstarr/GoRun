@@ -53,7 +53,7 @@ var $seconds = 900;
 $('#clock').backward_timer({
   seconds: $seconds,
   format: 'm%:s%'
-})
+});
 
 //Add 15 minutes to timer
 $(".add").click(function() {
@@ -74,7 +74,7 @@ $(".add").click(function() {
       $(".minutes-hours").text("minutes");
     }
   }
-})
+});
 
 //Subtract 15 minutes from timer
 $(".sub").click(function() {
@@ -97,7 +97,7 @@ $(".sub").click(function() {
     }
     
   }
-})
+});
 
 //Timer Activation/Cancel
 $('#start').click(function() {
@@ -118,8 +118,9 @@ $('#start').click(function() {
     $(this).removeClass("start btn-success");
   }
     
-})
+});
 
+//Edit Profile About info
 $('.edit-button').click(function(){
   console.log("Edit");
     var $edit=$('#about'), isEditable=$edit.is('.editable');
@@ -131,5 +132,5 @@ $('.edit-button').click(function(){
         $edit=$('#about'), isEditable=$edit.is('.editable');
         $edit.prop('contenteditable',!isEditable).toggleClass('editable');
       }
-    })
-})
+    });
+});
