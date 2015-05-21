@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$gogreen".
-        on line 28 of sass/profile.sass
+        on line 29 of sass/profile.sass
 
-23: 	bottom: 48px
 24: 	padding-top: 70px	 
 25: 	background: white
-26: 
-27: 	h4
-28: 		color: $gogreen
-29: 		margin-top: 35px
-30: 
-31: 	h4:first-child
-32: 		margin-top: 0px
-33: 
+26: 	margin-bottom: 25px
+27: 
+28: 	h4
+29: 		color: $gogreen
+30: 		margin-top: 35px
+31: 
+32: 	h4:first-child
+33: 		margin-top: 0px
+34: 
 
 Backtrace:
-sass/profile.sass:28
+sass/profile.sass:29
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -78,4 +78,4 @@ C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/vendor/listen/l
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gogreen\".\A         on line 28 of sass/profile.sass\A \A 23: 	bottom: 48px\A 24: 	padding-top: 70px	 \A 25: 	background: white\A 26: \A 27: 	h4\A 28: 		color: $gogreen\A 29: 		margin-top: 35px\A 30: \A 31: 	h4:first-child\A 32: 		margin-top: 0px\A 33: "; }
+  content: "Error: Undefined variable: \"$gogreen\".\A         on line 29 of sass/profile.sass\A \A 24: 	padding-top: 70px	 \A 25: 	background: white\A 26: 	margin-bottom: 25px\A 27: \A 28: 	h4\A 29: 		color: $gogreen\A 30: 		margin-top: 35px\A 31: \A 32: 	h4:first-child\A 33: 		margin-top: 0px\A 34: "; }

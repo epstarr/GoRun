@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS;EACR,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC",
+"sources": ["../sass/feed.sass"],
+"names": [],
+"file": "feed.css"
+}
