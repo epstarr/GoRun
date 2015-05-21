@@ -134,3 +134,20 @@ $('.edit-button').click(function(){
       }
     });
 });
+
+//Join Run in feed
+$(".join").click(function () {
+  if ($(this).text().match('Joined!')) {
+    console.log("Left");
+    var attendCount = $(this).siblings("span").text();
+    attendCount --;
+    $(this).siblings("span").text(attendCount).toggleClass("label-success label-default");
+    $(this).text("+Join");
+  } else {
+    console.log("Joined");
+    var attendCount = $(this).siblings("span").text();
+    attendCount ++;
+    $(this).siblings("span").text(attendCount).toggleClass("label-success label-default");
+    $(this).text("Joined!");
+  }
+});
