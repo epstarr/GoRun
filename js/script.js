@@ -106,16 +106,16 @@ $('#start').click(function() {
     $('#clock').backward_timer('reset');
     //pause
     $('#clock').backward_timer('cancel');
-    $(this).removeClass("running");
-    $(this).addClass("start");
+    $(this).removeClass("running btn-warning");
+    $(this).addClass("start btn-success");
     $(".add, .sub").removeClass("disabled");
     console.log("reset");
   } else {
     //begin
     $('#clock').backward_timer('start');
     $(".add, .sub").addClass("disabled");
-    $(this).addClass("running");
-    $(this).removeClass("start");
+    $(this).addClass("running btn-warning");
+    $(this).removeClass("start btn-success");
   }
     
 })
